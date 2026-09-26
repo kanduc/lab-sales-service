@@ -35,7 +35,7 @@ jobs:
       - name: Verify sales-service
         run: |
           mvn -B \
-            -f sales-service/pom.xml \
+            -f pom.xml \
             clean verify \
             -DskipTests
 
