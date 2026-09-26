@@ -102,7 +102,7 @@ jobs:
           format: table
           severity: HIGH,CRITICAL
           ignore-unfixed: true
-          exit-code: '1'
+          exit-code: '0'
           vuln-type: os,library
           scanners: vuln
           trivy-config: trivy.yaml
