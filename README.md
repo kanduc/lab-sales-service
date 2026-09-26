@@ -21,3 +21,7 @@ Ejemplo:
 ```
 
 Puerto local: `8082`.
+
+## Pruebas CI/CD
+
+Laboratorio CI/CD GitHub Actions + AWS
