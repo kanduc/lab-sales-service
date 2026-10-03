@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{- include "sales-service.fullname" . -}}
+  name: {{ include "sales-service.fullname" . }}
   labels:
     {{- include "sales-service.labels" . | nindent 4 }}
 spec:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "sales-service.selectorLabels" . | nindent 4 }}
+  {{- include "sales-service.selectorLabels" . | nindent 4 }}

@@ -122,7 +122,7 @@ jobs:
         include:
           - component: sales-service
             release: sales-service
-            chart: ./helm/sales-service
+            chart: ./helm
             ecr_repository: ${{ vars.SALES_ECR_REPOSITORY }}
             deployment: sales-service
     steps:
@@ -159,7 +159,7 @@ jobs:
 
           helm upgrade --install "${{ matrix.release }}" "${{ matrix.chart }}" \
             --namespace "${K8S_NAMESPACE}" \
-            --create-namespace \
+##            --create-namespace \
             --set "image.repository=${IMAGE_REPOSITORY}" \
             --set "image.tag=${GITHUB_SHA}" \
             --wait \
