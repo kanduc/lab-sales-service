@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/sales-service
+  repository: 629690103043.dkr.ecr.us-east-1.amazonaws.com/sales-service
   tag: latest
   pullPolicy: IfNotPresent
 
